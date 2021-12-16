@@ -20,7 +20,7 @@ df = df.loc[:, ["time", "rate"]]
 df = df.rename(columns = {"time": "ds", "rate": "y"})
 #converting ds to datetime
 df["ds"] = pd.to_datetime(df["ds"])
-# unction to get the hour of the ds col
+# function to get the hour of the ds col
 def get_hour(datetime_o):
     return datetime_o.hour
 #creatig a new col for the hour
